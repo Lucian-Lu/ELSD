@@ -1,0 +1,11 @@
+
+
+{
+
+}
+
+a= "5"
+
+if(    a) {
+ messageText -> asdasdas
+}

@@ -17,6 +17,15 @@ class PBLv2Listener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by PBLv2Parser#sorb.
+    def enterSorb(self, ctx:PBLv2Parser.SorbContext):
+        pass
+
+    # Exit a parse tree produced by PBLv2Parser#sorb.
+    def exitSorb(self, ctx:PBLv2Parser.SorbContext):
+        pass
+
+
     # Enter a parse tree produced by PBLv2Parser#block.
     def enterBlock(self, ctx:PBLv2Parser.BlockContext):
         pass
@@ -32,15 +41,6 @@ class PBLv2Listener(ParseTreeListener):
 
     # Exit a parse tree produced by PBLv2Parser#statement.
     def exitStatement(self, ctx:PBLv2Parser.StatementContext):
-        pass
-
-
-    # Enter a parse tree produced by PBLv2Parser#inStatement.
-    def enterInStatement(self, ctx:PBLv2Parser.InStatementContext):
-        pass
-
-    # Exit a parse tree produced by PBLv2Parser#inStatement.
-    def exitInStatement(self, ctx:PBLv2Parser.InStatementContext):
         pass
 
 

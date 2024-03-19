@@ -1,11 +1,10 @@
-
-
 {
-
+today="Tuesday"
+// Comment reminder
 }
 
-a= "5"
+a="55"
 
-if(    a) {
- messageText -> asdasdas
+if("the word 'DSL' is in the file, show me all sentences containing the word") {// This is another comment
+  messageText -> ocrRecognize "file" -> ocrReadText "file" -> ocrReadTextLang "file" -> llmGenerateText "text"-> llmProcessInput "text"-> llmSendResult "text"
 }

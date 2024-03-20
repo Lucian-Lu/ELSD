@@ -1,4 +1,4 @@
-# Generated from PBLv2.g4 by ANTLR 4.13.1
+# Generated from SOLeAI.g4 by ANTLR 4.13.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -53,9 +53,9 @@ def serializedATN():
         87,93,98,102,108,115
     ]
 
-class PBLv2Parser ( Parser ):
+class SOLeAIParser ( Parser ):
 
-    grammarFileName = "PBLv2.g4"
+    grammarFileName = "SOLeAI.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -123,17 +123,17 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def EOF(self):
-            return self.getToken(PBLv2Parser.EOF, 0)
+            return self.getToken(SOLeAIParser.EOF, 0)
 
         def sorb(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PBLv2Parser.SorbContext)
+                return self.getTypedRuleContexts(SOLeAIParser.SorbContext)
             else:
-                return self.getTypedRuleContext(PBLv2Parser.SorbContext,i)
+                return self.getTypedRuleContext(SOLeAIParser.SorbContext,i)
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_prog
+            return SOLeAIParser.RULE_prog
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterProg" ):
@@ -148,7 +148,7 @@ class PBLv2Parser ( Parser ):
 
     def prog(self):
 
-        localctx = PBLv2Parser.ProgContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.ProgContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_prog)
         self._la = 0 # Token type
         try:
@@ -164,7 +164,7 @@ class PBLv2Parser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 32
-            self.match(PBLv2Parser.EOF)
+            self.match(SOLeAIParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -182,21 +182,21 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def statement(self):
-            return self.getTypedRuleContext(PBLv2Parser.StatementContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.StatementContext,0)
 
 
         def NEWLINE(self, i:int=None):
             if i is None:
-                return self.getTokens(PBLv2Parser.NEWLINE)
+                return self.getTokens(SOLeAIParser.NEWLINE)
             else:
-                return self.getToken(PBLv2Parser.NEWLINE, i)
+                return self.getToken(SOLeAIParser.NEWLINE, i)
 
         def block(self):
-            return self.getTypedRuleContext(PBLv2Parser.BlockContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.BlockContext,0)
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_sorb
+            return SOLeAIParser.RULE_sorb
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterSorb" ):
@@ -211,7 +211,7 @@ class PBLv2Parser ( Parser ):
 
     def sorb(self):
 
-        localctx = PBLv2Parser.SorbContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.SorbContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_sorb)
         self._la = 0 # Token type
         try:
@@ -225,7 +225,7 @@ class PBLv2Parser ( Parser ):
                 _la = self._input.LA(1)
                 while _la==14:
                     self.state = 34
-                    self.match(PBLv2Parser.NEWLINE)
+                    self.match(SOLeAIParser.NEWLINE)
                     self.state = 39
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
@@ -238,7 +238,7 @@ class PBLv2Parser ( Parser ):
                 while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                     if _alt == 1:
                         self.state = 41
-                        self.match(PBLv2Parser.NEWLINE)
+                        self.match(SOLeAIParser.NEWLINE)
 
                     else:
                         raise NoViableAltException(self)
@@ -255,7 +255,7 @@ class PBLv2Parser ( Parser ):
                 _la = self._input.LA(1)
                 while _la==14:
                     self.state = 46
-                    self.match(PBLv2Parser.NEWLINE)
+                    self.match(SOLeAIParser.NEWLINE)
                     self.state = 51
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
@@ -268,7 +268,7 @@ class PBLv2Parser ( Parser ):
                 while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                     if _alt==1:
                         self.state = 53
-                        self.match(PBLv2Parser.NEWLINE) 
+                        self.match(SOLeAIParser.NEWLINE) 
                     self.state = 58
                     self._errHandler.sync(self)
                     _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
@@ -294,19 +294,19 @@ class PBLv2Parser ( Parser ):
 
         def sorb(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PBLv2Parser.SorbContext)
+                return self.getTypedRuleContexts(SOLeAIParser.SorbContext)
             else:
-                return self.getTypedRuleContext(PBLv2Parser.SorbContext,i)
+                return self.getTypedRuleContext(SOLeAIParser.SorbContext,i)
 
 
         def NEWLINE(self, i:int=None):
             if i is None:
-                return self.getTokens(PBLv2Parser.NEWLINE)
+                return self.getTokens(SOLeAIParser.NEWLINE)
             else:
-                return self.getToken(PBLv2Parser.NEWLINE, i)
+                return self.getToken(SOLeAIParser.NEWLINE, i)
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_block
+            return SOLeAIParser.RULE_block
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterBlock" ):
@@ -321,13 +321,13 @@ class PBLv2Parser ( Parser ):
 
     def block(self):
 
-        localctx = PBLv2Parser.BlockContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.BlockContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_block)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 61
-            self.match(PBLv2Parser.T__0)
+            self.match(SOLeAIParser.T__0)
             self.state = 66
             self._errHandler.sync(self)
             _la = self._input.LA(1)
@@ -342,7 +342,7 @@ class PBLv2Parser ( Parser ):
 
                 elif la_ == 2:
                     self.state = 63
-                    self.match(PBLv2Parser.NEWLINE)
+                    self.match(SOLeAIParser.NEWLINE)
                     pass
 
 
@@ -351,7 +351,7 @@ class PBLv2Parser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 69
-            self.match(PBLv2Parser.T__1)
+            self.match(SOLeAIParser.T__1)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -369,23 +369,23 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def varAssignment(self):
-            return self.getTypedRuleContext(PBLv2Parser.VarAssignmentContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.VarAssignmentContext,0)
 
 
         def ifBlock(self):
-            return self.getTypedRuleContext(PBLv2Parser.IfBlockContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.IfBlockContext,0)
 
 
         def pipeStream(self):
-            return self.getTypedRuleContext(PBLv2Parser.PipeStreamContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.PipeStreamContext,0)
 
 
         def comment(self):
-            return self.getTypedRuleContext(PBLv2Parser.CommentContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.CommentContext,0)
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_statement
+            return SOLeAIParser.RULE_statement
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterStatement" ):
@@ -400,7 +400,7 @@ class PBLv2Parser ( Parser ):
 
     def statement(self):
 
-        localctx = PBLv2Parser.StatementContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.StatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_statement)
         try:
             self.state = 75
@@ -448,10 +448,10 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def COMMENT_STRING(self):
-            return self.getToken(PBLv2Parser.COMMENT_STRING, 0)
+            return self.getToken(SOLeAIParser.COMMENT_STRING, 0)
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_comment
+            return SOLeAIParser.RULE_comment
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterComment" ):
@@ -466,12 +466,12 @@ class PBLv2Parser ( Parser ):
 
     def comment(self):
 
-        localctx = PBLv2Parser.CommentContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.CommentContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_comment)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 77
-            self.match(PBLv2Parser.COMMENT_STRING)
+            self.match(SOLeAIParser.COMMENT_STRING)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -489,19 +489,19 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def varName(self):
-            return self.getTypedRuleContext(PBLv2Parser.VarNameContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.VarNameContext,0)
 
 
         def value(self):
-            return self.getTypedRuleContext(PBLv2Parser.ValueContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.ValueContext,0)
 
 
         def pipeStream(self):
-            return self.getTypedRuleContext(PBLv2Parser.PipeStreamContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.PipeStreamContext,0)
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_varAssignment
+            return SOLeAIParser.RULE_varAssignment
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterVarAssignment" ):
@@ -516,14 +516,14 @@ class PBLv2Parser ( Parser ):
 
     def varAssignment(self):
 
-        localctx = PBLv2Parser.VarAssignmentContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.VarAssignmentContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_varAssignment)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 79
             self.varName()
             self.state = 80
-            self.match(PBLv2Parser.T__2)
+            self.match(SOLeAIParser.T__2)
             self.state = 83
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
@@ -555,14 +555,14 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def STRING(self):
-            return self.getToken(PBLv2Parser.STRING, 0)
+            return self.getToken(SOLeAIParser.STRING, 0)
 
         def varName(self):
-            return self.getTypedRuleContext(PBLv2Parser.VarNameContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.VarNameContext,0)
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_value
+            return SOLeAIParser.RULE_value
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterValue" ):
@@ -577,7 +577,7 @@ class PBLv2Parser ( Parser ):
 
     def value(self):
 
-        localctx = PBLv2Parser.ValueContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.ValueContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_value)
         try:
             self.state = 87
@@ -586,7 +586,7 @@ class PBLv2Parser ( Parser ):
             if token in [11]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 85
-                self.match(PBLv2Parser.STRING)
+                self.match(SOLeAIParser.STRING)
                 pass
             elif token in [13]:
                 self.enterOuterAlt(localctx, 2)
@@ -613,23 +613,23 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def value(self):
-            return self.getTypedRuleContext(PBLv2Parser.ValueContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.ValueContext,0)
 
 
         def pipeStream(self):
-            return self.getTypedRuleContext(PBLv2Parser.PipeStreamContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.PipeStreamContext,0)
 
 
         def statement(self):
-            return self.getTypedRuleContext(PBLv2Parser.StatementContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.StatementContext,0)
 
 
         def block(self):
-            return self.getTypedRuleContext(PBLv2Parser.BlockContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.BlockContext,0)
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_ifBlock
+            return SOLeAIParser.RULE_ifBlock
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterIfBlock" ):
@@ -644,14 +644,14 @@ class PBLv2Parser ( Parser ):
 
     def ifBlock(self):
 
-        localctx = PBLv2Parser.IfBlockContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.IfBlockContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_ifBlock)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 89
-            self.match(PBLv2Parser.T__3)
+            self.match(SOLeAIParser.T__3)
             self.state = 90
-            self.match(PBLv2Parser.T__4)
+            self.match(SOLeAIParser.T__4)
             self.state = 93
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
@@ -667,7 +667,7 @@ class PBLv2Parser ( Parser ):
 
 
             self.state = 95
-            self.match(PBLv2Parser.T__5)
+            self.match(SOLeAIParser.T__5)
             self.state = 98
             self._errHandler.sync(self)
             token = self._input.LA(1)
@@ -700,17 +700,17 @@ class PBLv2Parser ( Parser ):
 
         def function(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PBLv2Parser.FunctionContext)
+                return self.getTypedRuleContexts(SOLeAIParser.FunctionContext)
             else:
-                return self.getTypedRuleContext(PBLv2Parser.FunctionContext,i)
+                return self.getTypedRuleContext(SOLeAIParser.FunctionContext,i)
 
 
         def inputData(self):
-            return self.getTypedRuleContext(PBLv2Parser.InputDataContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.InputDataContext,0)
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_pipeStream
+            return SOLeAIParser.RULE_pipeStream
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterPipeStream" ):
@@ -725,7 +725,7 @@ class PBLv2Parser ( Parser ):
 
     def pipeStream(self):
 
-        localctx = PBLv2Parser.PipeStreamContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.PipeStreamContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_pipeStream)
         self._la = 0 # Token type
         try:
@@ -749,7 +749,7 @@ class PBLv2Parser ( Parser ):
             _la = self._input.LA(1)
             while _la==7:
                 self.state = 104
-                self.match(PBLv2Parser.T__6)
+                self.match(SOLeAIParser.T__6)
                 self.state = 105
                 self.function()
                 self.state = 110
@@ -773,18 +773,18 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def functionName(self):
-            return self.getTypedRuleContext(PBLv2Parser.FunctionNameContext,0)
+            return self.getTypedRuleContext(SOLeAIParser.FunctionNameContext,0)
 
 
         def value(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PBLv2Parser.ValueContext)
+                return self.getTypedRuleContexts(SOLeAIParser.ValueContext)
             else:
-                return self.getTypedRuleContext(PBLv2Parser.ValueContext,i)
+                return self.getTypedRuleContext(SOLeAIParser.ValueContext,i)
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_function
+            return SOLeAIParser.RULE_function
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterFunction" ):
@@ -799,7 +799,7 @@ class PBLv2Parser ( Parser ):
 
     def function(self):
 
-        localctx = PBLv2Parser.FunctionContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.FunctionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_function)
         self._la = 0 # Token type
         try:
@@ -834,7 +834,7 @@ class PBLv2Parser ( Parser ):
 
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_inputData
+            return SOLeAIParser.RULE_inputData
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterInputData" ):
@@ -849,7 +849,7 @@ class PBLv2Parser ( Parser ):
 
     def inputData(self):
 
-        localctx = PBLv2Parser.InputDataContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.InputDataContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_inputData)
         self._la = 0 # Token type
         try:
@@ -878,10 +878,10 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def ALPHANUM(self):
-            return self.getToken(PBLv2Parser.ALPHANUM, 0)
+            return self.getToken(SOLeAIParser.ALPHANUM, 0)
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_functionName
+            return SOLeAIParser.RULE_functionName
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterFunctionName" ):
@@ -896,12 +896,12 @@ class PBLv2Parser ( Parser ):
 
     def functionName(self):
 
-        localctx = PBLv2Parser.FunctionNameContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.FunctionNameContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_functionName)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 120
-            self.match(PBLv2Parser.ALPHANUM)
+            self.match(SOLeAIParser.ALPHANUM)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -919,10 +919,10 @@ class PBLv2Parser ( Parser ):
             self.parser = parser
 
         def ALPHANUM(self):
-            return self.getToken(PBLv2Parser.ALPHANUM, 0)
+            return self.getToken(SOLeAIParser.ALPHANUM, 0)
 
         def getRuleIndex(self):
-            return PBLv2Parser.RULE_varName
+            return SOLeAIParser.RULE_varName
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterVarName" ):
@@ -937,12 +937,12 @@ class PBLv2Parser ( Parser ):
 
     def varName(self):
 
-        localctx = PBLv2Parser.VarNameContext(self, self._ctx, self.state)
+        localctx = SOLeAIParser.VarNameContext(self, self._ctx, self.state)
         self.enterRule(localctx, 24, self.RULE_varName)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 122
-            self.match(PBLv2Parser.ALPHANUM)
+            self.match(SOLeAIParser.ALPHANUM)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)

@@ -1,4 +1,4 @@
-# Generated from PBLv2.g4 by ANTLR 4.13.1
+# Generated from SOLeAI.g4 by ANTLR 4.13.1
 from antlr4 import *
 from io import StringIO
 import sys
@@ -57,7 +57,7 @@ def serializedATN():
         111,115,120,125,1,6,0,0
     ]
 
-class PBLv2Lexer(Lexer):
+class SOLeAILexer(Lexer):
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -94,7 +94,7 @@ class PBLv2Lexer(Lexer):
                   "T__7", "T__8", "T__9", "STRING", "COMMENT_STRING", "ALPHANUM", 
                   "NEWLINE", "WHITESPACE" ]
 
-    grammarFileName = "PBLv2.g4"
+    grammarFileName = "SOLeAI.g4"
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)

@@ -1,4 +1,4 @@
-grammar PBLv2;
+grammar SOLeAI;
 
 prog: (sorb)* EOF;
 sorb: NEWLINE* statement NEWLINE+ | NEWLINE* block NEWLINE*;
